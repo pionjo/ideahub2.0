@@ -1,0 +1,200 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: white;
+    background: linear-gradient(to right, #1e3c72, #2a5298, #6e48aa); /* Apply the gradient to the entire body */
+    height: 100vh;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent; /* Make navbar background transparent to show gradient */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+.highlighted {
+    color: #ffce3a; /* Highlighted for Free Trial */
+}
+
+.login-btn {
+    padding: 8px 16px;
+    border: 1px solid #00b4d8;
+    border-radius: 4px;
+    color: white;
+}
+
+.login-btn:hover {
+    background-color: #00b4d8;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: calc(100vh - 80px); /* Subtract the navbar height from 100vh */
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+/* Buttons with Gradient */
+.btn-gradient {
+    background: linear-gradient(135deg, #007bff, #6610f2);
+    color: white;
+    border: none;
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(135deg, #6610f2, #007bff);
+}
+
+/* Form Styling */
+form {
+    background: #f0f5fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    font-size: 1.2rem;
+}
+
+#result {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+/* Chatbot Styles */
+#chatbot-container {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: yellowgreen;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+    flex-direction: column;
+}
+
+#chatbot-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatbot-messages {
+    padding: 10px;
+    overflow-y: scroll;
+    flex-grow: 1;
+    background-color: yellowgreen;
+}
+
+.chatbot-input-container {
+    display: flex;
+    padding: 10px;
+    background-color:yellowgreen;
+    ;
+}
+
+.chatbot-input-container input {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.open-chatbot-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color:#fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.open-chatbot-btn:hover {
+    background-color: #45a049;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
