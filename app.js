@@ -21,7 +21,7 @@ document.getElementById('fraud-form').addEventListener('submit', function (e) {
 });
 
 function detectFraud(amount, location, time) {
-    let maxAmount = 1000;
+    let maxAmount = 10000;
     let hour = new Date(time).getHours();
     
     // Example fraud detection logic
